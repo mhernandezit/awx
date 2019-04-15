@@ -69,6 +69,7 @@ module.exports = {
             .findThenClick(workflowTemplateNavTab)
             .pause(1500)
             .waitForElementNotVisible(spinny)
+            .waitForElementVisible(workflowSearchBar)
             .clearValue(workflowSearchBar)
             .setValue(workflowSearchBar, [workflowText, client.Keys.ENTER])
             .waitForElementVisible(workflowSearchBadgeCount)
