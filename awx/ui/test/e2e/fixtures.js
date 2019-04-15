@@ -246,7 +246,7 @@ const waitForJob = endpoint => {
     const interval = 2000;
     const statuses = ['successful', 'failed', 'error', 'canceled'];
 
-    let attempts = 20;
+    let attempts = 30;
 
     return new Promise((resolve, reject) => {
         (function pollStatus () {
